@@ -1,0 +1,23 @@
+{
+    "name": "my-platform/ecommerce-core",
+    "description": "Core E-commerce logic for My Platform",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MyPlatform\\EcommerceCore\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^3.0",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MyPlatform\\EcommerceCore\\EcommerceCoreServiceProvider"
+            ]
+        }
+    }
+}
